@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20050908</pubdate>
+                <title>School Sites in King County / schsite_point</title>
+                <edition>One</edition>
+                <geoform>vector digital data</geoform>
+                <pubinfo>
+                    <pubplace/>
+                    <publish>King County</publish>
+                </pubinfo>
+                <othercit>None</othercit>
+                <onlink>https://kingcounty.maps.arcgis.com/home/item.html?id=326cb26c6bb549529f608d7d5f40853b</onlink>
+                <onlink>https://kingcounty.maps.arcgis.com/home/item.html?id=526cdf3320c44101a8bf37487ea0047d</onlink>
+                <onlink>http://www5.kingcounty.gov/sdc/Metadata.aspx?Layer=schsite</onlink>
+                <onlink>http://www5.kingcounty.gov/sdc/addl_doc/KCGISCenterTermsAndConditions.pdf</onlink>
+                <onlink>http://www5.kingcounty.gov/sdc/addl_doc/KCGISCenterHelpUsingKCOpenData.pdf</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>King County School Sites and School Related Facilities.</abstract>
+            <purpose>Parcel-based centroid for school facility. No footprint or infrastructure extent provided. Attributes assign parcel and street identifiers for location information.</purpose>
+            <supplinf>None</supplinf>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <sngdate>
+                    <caldate>20150929</caldate>
+                </sngdate>
+            </timeinfo>
+            <current>ground condition</current>
+        </timeperd>
+        <status>
+            <progress>Complete</progress>
+            <update>As needed</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-122.470841</westbc>
+                <eastbc>-121.357186</eastbc>
+                <northbc>47.783806</northbc>
+                <southbc>47.180104</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>administrative_OpenData</themekey>
+                <themekey>elementary schools</themekey>
+                <themekey>universities</themekey>
+                <themekey>school</themekey>
+                <themekey>high schools</themekey>
+                <themekey>colleges</themekey>
+                <themekey>admin</themekey>
+                <themekey>schsite_point</themekey>
+                <themekey>kingcounty_opendata</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>society</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>Pacific NW</placekey>
+                <placekey>King County</placekey>
+                <placekey>Washington state</placekey>
+                <placekey>WA</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>King County data are made available with the understanding that they shall be used exclusively by the obtainer or his/her authorized agents. Digital products may not be reproduced or redistributed in any form or by any means without the express written authorization of King County.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>King County GIS Center</cntorg>
+                    <cntper>Mike Leathers</cntper>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>201 S Jackson St, Suite 706</address>
+                    <city>Seattle</city>
+                    <state>WA</state>
+                    <postal>98104</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>206-263-4867</cntvoice>
+            </cntinfo>
+        </ptcontac>
+        <browse>
+            <browsen>http://www5.kingcounty.gov/sdc/DataImages/schsite.jpg</browsen>
+            <browsed>JPG File of layer overlain on base of WA counties or local cities</browsed>
+            <browset>JPG</browset>
+        </browse>
+        <native>ESRI ArcGIS 10.0.3.3600</native>
+    </idinfo>
+    <dataqual>
+        <attracc>
+            <attraccr>Data updated using school district websites.</attraccr>
+        </attracc>
+        <logic>Generally one point for each named school</logic>
+        <complete>Contains schools for all public school districts within King County, as well as private schools and colleges. Point features also represent closed schools or school owned properties - this data is less complete than the existing schools.</complete>
+        <posacc>
+            <horizpa>
+                <horizpar>Points aligned to school buildings using digital air photography (where possible).</horizpar>
+            </horizpa>
+        </posacc>
+        <lineage>
+            <procstep>
+                <procdesc>Updated with corrections for Issaquah and Snoqualmie Valley SD. Corrections to address, ADDRESS_POINT.esite id assignments. Added new schools: Creekside Elementary, Grand Ridge Elementary, Cascade View Elementary, and Twin Falls Middle School</procdesc>
+            </procstep>
+            <procstep>
+                <procdesc>Updated addresses for Maplewood Heights Elementary and Sierra Heights Elementary due to Renton August 2010 annexation. New addresses match Renton addressing scheme.</procdesc>
+            </procstep>
+            <procstep>
+                <procdesc>Original data geocoded using school addresses against street network</procdesc>
+                <procdate>19940101</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Points aligned to correct parcel and / or correct location using air photography</procdesc>
+                <procdate>20031101</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Updated with latest information as of December 2005, reflecting new schools, school closures and school changes (for public elementary and secondary schools only).</procdesc>
+                <procdate>20051219</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Changed schema (item names) as follows: 1. CLASS to SCH_CLASS, 2. PREFIX to DIR_PREFIX, 3. STREET to ST_NAME, 4. SUFFIX to DIR_SUFFIX, 5. SOURCE to DAT_SOURCE</procdesc>
+                <procdate>20051227</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Create python routine schsite.py 
+				that creates a join between feature class SCHSITE_MAST and table SCHSITE_TYPE. Join is performed on SCHSITE_MAST.CLASS to SCHSITE_TYPE.CLASS. CLASS_DESC item from SCHSITE_TYPE table is added to SCHSITE_MAST. SCHSITE_MAST is renamed to SCHSITE_POINT and posted from feature dataset MAINT.GISC.PointsInterestProcess. Any future updates to SCHSITE_MAST should be made against the version in MAINT.GISC.PointsInterest feature data set. After updates are completed, python script should be run to complete table managment. Reimport metadata from master and repost data to SDW.</procdesc>
+                <procdate>20061001</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Create new lookup table from SCHSITEPAT_LXT called SCHSITE_TYPE. Contains only items SCH_CLASS (small integer 5) and CLASS_DESC (text 50). Values from old items CLASS and DESC calculated to new items, respectively. Items OLDTYPE, SYMBOL and DUP are not carried forward from old lookup table to new table. Finally in new table, remove all records other than where CLASS (now SCH_CLASS) is 1:9.</procdesc>
+                <procdate>20061001</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Item DDES_ID and OLDTYPE dropped</procdesc>
+                <procdate>20061001</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Rename current MAINT.GISC.PointsInterest.SCHSITE_POINT feature class to MAINT.GISC.PointsInterest.SCHSITE_MAST.</procdesc>
+                <procdate>20061001</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Derived from COMMON_INTEREST master table based on CODE = 660,661,662,663,664 or 665. Business table attributes are then attached.</procdesc>
+                <procdate>20100101</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Complete data review performed in 2010. Edits compiled in database on Process Date. New domain added to current set of 660-665. Value 666 added to uniquely classify K-12 grade schools. Previously this had been inferred through SCH_CLASS item. SCH_CLASS item repurposed to solely designated whether site is Public, Private or Vacated. This item had previously stored mixed information regarding public or private status and class of school. Class of school is now managed via CODE. CLASS_DESC is dropped. This had been the literal for SCH_CLASS. When SCH_CLASS was repurposed, this item no longer was necessary. DISTNUM is dropped. This had been the numeric equivalent of what is stored in DISTRICT. COMMENTS is dropped. LONG_CEN and LAT_CEN, geographic coordinates for Longitude and Latitude of the feature centroid are added to allow geocoding through County Data Portal site.</procdesc>
+                <procdate>20110301</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Updated name and location for Pacific Cascade Freshman Campus (now Pacific Cascade Middle School). Updated location for Louisa May Alcott School.</procdesc>
+                <procdate>20110725</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Updated with corrections for Lake Washington School District. Corrections to address, ADDRESS_POINT.esite id assignments. Added new school: Rachel Carson</procdesc>
+                <procdate>20110929</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Corrections made for: Creekside – Exists in SCHSITE at stated address. Corrected missing ESITE. Location Good Panther Lake School – Kent – Exists in SCHSITE but incorrect address. Address, XY and ESITE corrected Skyline HS – Exists in SCHSITE at stated address. Corrected missing ESITE. Location Good Cedar River School – Exists in SCHSITE at stated address. Elementary corrected to Junior High/Middle. Location Good</procdesc>
+                <procdate>20120813</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>North Seattle College, Seattle Central College, South Seattle College, Highline College: Word Community dropped from name, reflecting their new status</procdesc>
+                <procdate>20140731</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Add two new schools to Federal Way School District. Made other name changes based on FW School District.</procdesc>
+                <procdate>20150929</procdate>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>Entity point</sdtstype>
+                <ptvctcnt>0</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>PLIBRARY.ADMIN.xxxx1254608</enttypl>
+                <enttypd>Point feature attribute table</enttypd>
+                <enttypds>ESRI</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>FEATURE_ID</attrlabl>
+                <attrdef>Unique feature identifier</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Integer</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>NAME</attrlabl>
+                <attrdef>Unique name of feature</attrdef>
+                <attrdefs>King County GIS Center</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Mixed text</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ESITE</attrlabl>
+                <attrdef>Unique identifier from ADDRESS_POINT database</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>1-7 digit value as text or '0000000' if unknown</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CODE</attrlabl>
+                <attrdef>Coded Value Domain lookup value</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>660</edomv>
+                        						
+                        <edomvd>School-Elementary</edomvd>
+                        						
+                        <edomvds>King County</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ZIPCODE</attrlabl>
+                <attrdef>Zipcode of street address</attrdef>
+                <attrdefs>King County GIS Center</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Five digit zip code for school location</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>LONG_CEN</attrlabl>
+                <attrdef>Centroid longitude</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Decimal degrees</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>LAT_CEN</attrlabl>
+                <attrdef>Latitude of centroid</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Decimal degrees</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ABB_NAME</attrlabl>
+                <attrdef>Abbreviated name for feature</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Mixed text</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS</attrlabl>
+                <attrdef>Full street address of feature</attrdef>
+                <attrdefs>King County GIS Center</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Mixed text</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SCH_CLASS</attrlabl>
+                <attrdef>Public/Private status of facility</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>10</edomv>
+                        						
+                        <edomvd>Public Facility</edomvd>
+                        						
+                        <edomvds>King County</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DISTRICT</attrlabl>
+                <attrdef>Name of school district</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>AUBURN</edomv>
+                        						
+                        <edomvd>Auburn School District 408</edomvd>
+                        						
+                        <edomvds>King County</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>WEBSITE</attrlabl>
+                <attrdef>URL for school website</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>http URL</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>PIN</attrlabl>
+                <attrdef>Parcel identification number</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>10 digit value as text</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>MAJOR</attrlabl>
+                <attrdef>Major number portion of PIN</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>First six digits of PIN</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>MINOR</attrlabl>
+                <attrdef>Minor number portion of PIN</attrdef>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Last four digits of PIN</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Coordinates defining the features.</udom>
+                    				
+                </attrdomv>
+            </attr>
+        </detailed>
+        <overview>
+            <eaover>Points for schools coded (generally) as Elementary, Middle, High School and College. Private schools undifferentiated.</eaover>
+            <eadetcit>King County GIS Center</eadetcit>
+        </overview>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>KCGIS Center</cntorg>
+                    <cntper>Cheryl Wilder</cntper>
+                </cntorgp>
+                <cntpos>Data Sales Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>201 S Jackson St, Suite 700</address>
+                    <city>Seattle</city>
+                    <state>WA</state>
+                    <postal>98104</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>206-263-5220</cntvoice>
+            </cntinfo>
+        </distrib>
+        <resdesc>/plibrary2/admin/shapes/point/schsite.shp</resdesc>
+        <distliab>King County disclaims any warranty of use of any digital product or data beyond that for which it was designed.</distliab>
+        <stdorder>
+            <digform>
+                <digtinfo>
+                    <formname>ESRI Shapefile</formname>
+                </digtinfo>
+            </digform>
+            <fees>Contact KCGIS Client Services for the cost of reproduction - http://www.kingcounty.gov/operations/GIS/GISData/GISDataDistribution.aspx</fees>
+        </stdorder>
+    </distinfo>
+    <metainfo>
+        <metd>20160122</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>King County GIS Center</cntorg>
+                    <cntper>Mike Leathers</cntper>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>201 S Jackson St, Suite 700</address>
+                    <city>Seattle</city>
+                    <state>WA</state>
+                    <postal>98104</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>206-263-4867</cntvoice>
+                <cntemail>firstname.lastname@kingcounty.gov</cntemail>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>

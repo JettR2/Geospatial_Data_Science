@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20100101</pubdate>
+                <title>Medical Facilities including Hospitals / medical_facilities_point</title>
+                <edition>One</edition>
+                <geoform>vector digital data</geoform>
+                <pubinfo>
+                    <pubplace/>
+                    <publish>King County</publish>
+                </pubinfo>
+                <othercit>None</othercit>
+                <onlink>https://kingcounty.maps.arcgis.com/home/item.html?id=f6f5c83a8e924edbab4d5fed62207693</onlink>
+                <onlink>https://kingcounty.maps.arcgis.com/home/item.html?id=1c3a16a872684421bf455c61fa9668b4</onlink>
+                <onlink>http://www5.kingcounty.gov/sdc/Metadata.aspx?Layer=medical_facilities</onlink>
+                <onlink>http://www5.kingcounty.gov/sdc/addl_doc/KCGISCenterTermsAndConditions.pdf</onlink>
+                <onlink>http://www5.kingcounty.gov/sdc/addl_doc/KCGISCenterHelpUsingKCOpenData.pdf</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>Subset of COMMON_INTEREST_POINT for Hospitals and Medical Centers class (domain). Includes hospitals, medical centers, dental centers, blood banks, etc.</abstract>
+            <purpose>Map display for centroid of feature and general analysis. There are no specific business items attached to MEDICAL_FACILITIES_POINT.</purpose>
+            <supplinf>See HOSPITALS_POINT for Acute Care hospitals only.</supplinf>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <sngdate>
+                    <caldate>20100101</caldate>
+                </sngdate>
+            </timeinfo>
+            <current>publication date</current>
+        </timeperd>
+        <status>
+            <progress>Complete</progress>
+            <update>Annually</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-122.403539</westbc>
+                <eastbc>-121.879278</eastbc>
+                <northbc>47.782794</northbc>
+                <southbc>47.203385</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>Not applicable</themekt>
+                <themekey>public safety_OpenData</themekey>
+                <themekey>medical facilities</themekey>
+                <themekey>administration</themekey>
+                <themekey>hospitals</themekey>
+                <themekey>admin</themekey>
+                <themekey>health</themekey>
+                <themekey>medical_facilities_point</themekey>
+                <themekey>kingcounty_opendata</themekey>
+            </theme>
+            <place>
+                <placekt>Not applicable</placekt>
+                <placekey>Pacific NW</placekey>
+                <placekey>King County</placekey>
+                <placekey>Washington state</placekey>
+                <placekey>WA</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>King County data are made available with the understanding that they shall be used exclusively by the obtainer or his/her authorized agents. Digital products may not be reproduced or redistributed in any form or by any means without the express written authorization of King County.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>King County GIS Center</cntorg>
+                    <cntper>Mike Leathers</cntper>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>201 S Jackson St, Suite 706</address>
+                    <city>Seattle</city>
+                    <state>WA</state>
+                    <postal>98104</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>206-263-4867</cntvoice>
+            </cntinfo>
+        </ptcontac>
+        <browse>
+            <browsen>http://www5.kingcounty.gov/sdc/DataImages/medical_facilities.jpg</browsen>
+            <browsed>JPG File of layer overlain on base of WA counties or local cities</browsed>
+            <browset>JPG</browset>
+        </browse>
+        <native>ESRI ArcGIS 10.0.3.3600</native>
+    </idinfo>
+    <dataqual>
+        <logic>Centroid point of feature structure</logic>
+        <complete>Hospitals are matched against state records. Other facilities added depending on interest and importance.</complete>
+        <lineage>
+            <procstep>
+                <procdesc>Derived from COMMON_INTEREST master table based on CODE = 330. There are no business items attached to this class beyond the standard items from COMMON_INTEREST.</procdesc>
+            </procstep>
+            <procstep>
+                <procdesc>Corrected address and location for Swedish Issaquah to 751 NE Blakely Dr.</procdesc>
+                <procdate>20160309</procdate>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>Entity point</sdtstype>
+                <ptvctcnt>0</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>PLIBRARY.PUBSAFE.xxxx1319659</enttypl>
+                <enttypd>Point attribute table</enttypd>
+                <enttypds>King County</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>FEATURE_ID</attrlabl>
+                <attrdef>Unique identifier</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ESITE</attrlabl>
+                <attrdef>Unique ADDRESS_POINT identifier</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>CODE</attrlabl>
+                <attrdef>COMMON_INTEREST_POINT domain</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>NAME</attrlabl>
+                <attrdef>Unique name of feature</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ABB_NAME</attrlabl>
+                <attrdef>Abbreviated name for feature</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS</attrlabl>
+                <attrdef>Full street address for feature</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ZIPCODE</attrlabl>
+                <attrdef>5 digit zipcode for address</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>WEBSITE</attrlabl>
+                <attrdef>URL for feature website or None</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>PIN</attrlabl>
+                <attrdef>10-digit Property Identification Number</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>MAJOR</attrlabl>
+                <attrdef>6-digit Major Number portion of PIN</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>MINOR</attrlabl>
+                <attrdef>4-digit Minor Number portion of PIN</attrdef>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Coordinates defining the features.</udom>
+                    				
+                </attrdomv>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>KCGIS Center</cntorg>
+                    <cntper>Cheryl Wilder</cntper>
+                </cntorgp>
+                <cntpos>Data Sales Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>201 S Jackson St, Suite 700</address>
+                    <city>Seattle</city>
+                    <state>WA</state>
+                    <postal>98104</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>206-263-5220</cntvoice>
+            </cntinfo>
+        </distrib>
+        <resdesc>/plibrary2/pubsafe/shapes/point/medical_facilities.shp</resdesc>
+        <distliab>King County disclaims any warranty of use of any digital product or data beyond that for which it was designed.</distliab>
+        <stdorder>
+            <digform>
+                <digtinfo>
+                    <formname>ESRI Shapefile</formname>
+                </digtinfo>
+            </digform>
+            <fees>Contact KCGIS Client Services for the cost of reproduction - http://www.kingcounty.gov/operations/GIS/GISData/GISDataDistribution.aspx</fees>
+        </stdorder>
+    </distinfo>
+    <metainfo>
+        <metd>20160309</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>King County GIS Center</cntorg>
+                    <cntper>Mike Leathers</cntper>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>201 S Jackson St, Suite 700</address>
+                    <city>Seattle</city>
+                    <state>WA</state>
+                    <postal>98104</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>206-263-4867</cntvoice>
+                <cntemail>firstname.lastname@kingcounty.gov</cntemail>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
